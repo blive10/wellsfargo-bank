@@ -1,0 +1,588 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./images/images.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Header */
+.container{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background: rgb(250, 223, 100);
+    
+}
+.logo{
+    background-image: url(./images/logo.png);
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+
+}
+
+.lock-icon{
+    position: absolute;
+    left: 57%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    gap: 12px;
+    cursor: pointer;
+}
+.search-bar{
+    width: 80px;
+    height: 33px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    position: absolute;
+    left: 86%;
+    outline-color: rgb(8, 84, 183);
+
+}
+
+li{
+        font-family: helvetica, sans-serif;
+        font-size: 14px;
+}
+
+.search-icon{
+    position: absolute;
+    left: 92%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    color: black;
+    width: 20px;
+}
+.burger{
+    display: none;
+}
+
+/* Main */
+
+.section{
+    width: 100%;
+    max-width: 65%;
+    display: flex;
+    height: 100dvb;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin:  auto;
+    margin-top: 50px;
+    
+
+    
+}
+.main{
+    width: 100%;
+    max-width: 80%;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+.welcome{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
+.formup{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.inputy{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+ 
+.username,.password{
+    border: none;
+    border-radius: 15px;
+    outline: 1px solid black;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 12px 70px 12px 5px ;
+    display: flex;
+    font-size: 19px;
+
+}
+
+.password:hover{
+    outline: 2px solid rgb(91, 1, 147);
+    box-shadow: 0 0 14px rgb(166, 82, 218), 0 0 10px #8f37be50;
+    
+}
+
+.username:hover{
+    outline: 2px solid rgb(91, 1, 147);
+    box-shadow: 0 0 14px rgb(166, 82, 218), 0 0 10px #8f37be50;
+}
+.password::placeholder{
+    color: rgba(0, 0, 0, 0.484);
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    left: 6%;
+}
+.username::placeholder{
+    color: rgba(0, 0, 0, 0.484);
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    left: 6%;
+}
+
+.passowrd-container{
+    position: relative;
+    left: 70%;
+}
+
+.show, .hide{
+    position: absolute;
+    left: 60%;
+    top: 45.6%;
+    background: transparent;
+    border: none;
+    color: rgb(72, 139, 240);
+    cursor: pointer;
+}
+.show:hover{
+    text-decoration: underline;
+}
+
+.hide:hover{
+    text-decoration: underline;
+}
+.message{
+    color: red;
+    margin-left: 150px;
+    font-size: 14px;
+
+}
+.checkbox-container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+    margin-top: 1.5%;
+    
+}
+.checkbox{
+    width: 30px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.disclaimer{
+    font-size: 14px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-left: 145px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 400px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.646);
+}
+
+.disclaimersign{
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-left: 145px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 340px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.646);
+}
+
+
+.submit{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 14px;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 44px;
+    color: rgba(0, 0, 0, 0.349);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+}
+
+.or{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+}
+.passkey{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding: 13px 19px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 6px;
+    background: transparent;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+.passkey:hover{
+    background-color: black;
+    color: white;
+}
+.pasicon{
+    width: 20px;
+    height: 17px;
+    margin-left: 3px;    
+}
+
+.createpasskey{
+    font-size: 14px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-left: 145px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 400px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.646);
+}
+
+.in{
+    position: relative;
+    left: 32%;
+    top: 6%;
+    cursor: pointer;
+}
+.forgot{
+    position: absolute;
+    top: 95%;
+    left: 43%;
+    color: rgb(7, 7, 134);
+    cursor: pointer;
+
+}
+
+.forgot:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px){
+    
+
+
+    /* Header */
+.container{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.burger{
+    position: relative;
+    left: 40%;
+    color: white;
+    cursor: pointer;
+    display: block;
+} 
+.lock-icon{
+    display: none;
+}
+
+ul{
+   display: none;
+}
+.search-bar{
+   display: none;
+}
+
+
+.search-icon{
+    display: none;
+}
+
+.logo{
+    
+    width: 170px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 99%;
+    width: 100%;
+    height: 5px;
+    background: rgb(250, 223, 100);
+    
+}
+
+/* Main */
+
+
+.section{
+    width: 100%;
+    max-width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 20px;
+
+    
+}
+.main{
+    width: 100%;
+    max-width: 90%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.username,.password{
+    max-width: 70%;
+}
+
+.show, .hide{
+    position: absolute;
+    left: 80%;
+    top: 37%;
+    background: transparent;
+    border: none;
+}
+
+.message{
+    margin-left: 30px;
+}
+.disclaimer{
+    width: 100%;
+    max-width: 90%;
+    position: relative;
+    right: 110px;
+}
+.disclaimersign{
+    width: 100%;
+    max-width: 80%;
+    position: relative;
+    right: 110px;
+    bottom: 4px;
+}
+.checkbox-container{
+    position: relative;
+    right: 130px;
+}
+.createpasskey{
+    margin-left: 30px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.forgot{
+    position: relative;
+    top: 0;
+    left: 25%;
+    overflow-x: hidden;
+    
+    
+    
+}
+.in{
+    bottom: 100%;
+    top: 40px;
+    left: 60px;
+}
+}
+
+@media (min-width: 600px) and (max-width: 1110px) {
+
+       /* Header */
+.container{
+    width: 100%;
+    height: 58px;
+  
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 99%;
+    width: 100%;
+    height: 5px;
+    background: rgb(250, 223, 100);
+    
+}
+.lock-icon{
+    left: 48%;
+}
+ul{
+    gap: 13px;
+    font-size: 20px;
+    left: 64%;
+}
+.search-bar{
+    left: 85%;
+}
+
+
+
+/* Main */
+
+
+.section{
+    width: 100%;
+    max-width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 20px;
+    
+
+    
+}
+.main{
+    width: 100%;
+    max-width: 80%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.username,.password{
+    max-width: 50%;
+    height: 40px;
+
+}
+.checkbox-container{
+    position: relative;
+    left: 2%;
+}
+
+.forgot{
+    top: 90%;
+    left: 37%;
+    overflow-x: hidden;
+} 
+.disclaimersign{
+    margin: auto;
+    justify-content: center;
+}
+.disclaimer{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+
+}
+.createpasskey{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    margin-top: 17px;
+
+}
+.in{
+    top: 2.7%;
+}
+}
+
+    

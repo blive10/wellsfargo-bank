@@ -1,13 +1,6 @@
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
-const allowedOrigins = [
-    "https://securely.wellsfargo.vercel.app"
-];
-
-app.use(cors({
-    origin: allowedOrigins
-}));
-
+const cors = require("cors");
 
 
 const app = express();
@@ -274,6 +267,7 @@ db.run(`
     }
 
 });
+
 
 
 

@@ -190,6 +190,7 @@ li{
     position: absolute;
     left: 60%;
     top: 45.6%;
+    font-size: 0.827rem;
     background: transparent;
     border: none;
     color: rgb(72, 139, 240);
@@ -358,6 +359,7 @@ li{
     color: white;
     cursor: pointer;
     display: block;
+    
 } 
 .lock-icon{
     display: none;
@@ -432,6 +434,7 @@ ul{
     position: absolute;
     left: 80%;
     top: 37%;
+    font-size: 15px;
     background: transparent;
     border: none;
 }

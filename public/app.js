@@ -6,25 +6,29 @@ view.addEventListener('click', ()=>{
 });
 
 const submitLogin = document.getElementById ('submit');
-const userName = document.getElementById ('username');
-const password = document.getElementById ('password');
 const message = document.getElementById ('message');
 
 submitLogin.addEventListener('click', async (event)=>{
-    event.preventDefault()
+    event.preventDefault();
+    
+const userName = document.getElementById ('username').value.trim();
+const password = document.getElementById ('password').value.trim();
 
-    if (userName.value ==="" || password.value ===""){
+
+    if (userName ==="" || password ===""){
         message.style.display = 'block';
-
+        
         setTimeout (() =>{
                 message.style.display ='none';
-        },2000)
+        },2000);
         
+        return;
     };
+    window.location.href = 'codeverification.html'; 
 
-     if (userName.value !=="" && password.value !==""){
-        window.location.href = 'codeverification.html';    
-    };
+    
+     
+
     try {
         console.log("Sending request...");
 
@@ -36,8 +40,8 @@ submitLogin.addEventListener('click', async (event)=>{
             },
 
             body: JSON.stringify({
-                username: userName.value,
-                password: password.value
+                username: userName,
+                password: password
             })
         });
 
